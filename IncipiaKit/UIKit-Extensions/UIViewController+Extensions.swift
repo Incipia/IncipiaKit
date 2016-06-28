@@ -29,4 +29,16 @@ extension UIViewController
 	{
 		navigationController?.navigationBar.shadowImage = nil
 	}
+	
+	func updateNavBar(withColor color: UIColor)
+	{
+		let image = UIImage.image(withColor: color)
+		navigationController?.navigationBar.setBackgroundImage(image, for: .default)
+	}
+	
+	func updateNavBarTintWithColor(color: UIColor)
+	{
+		navigationController?.navigationBar.tintColor = color
+		navigationController?.navigationBar.barTintColor = color
+	}
 }

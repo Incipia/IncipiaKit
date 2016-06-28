@@ -38,12 +38,12 @@ extension UIImage
 		return gradientImage!
 	}
 	
-	class func imageWithColor(color: UIColor) -> UIImage
+	class func image(withColor color: UIColor) -> UIImage
 	{
-		return imageWithColor(color: color, size: CGSize(width: 1, height: 1))
+		return image(withColor: color, size: CGSize(width: 1, height: 1))
 	}
 	
-	class func imageWithColor(color: UIColor, size: CGSize) -> UIImage
+	class func image(withColor color: UIColor, size: CGSize) -> UIImage
 	{
 		let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
 		UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -57,7 +57,7 @@ extension UIImage
 		return image
 	}
 	
-	func correctlyOrientedImage() -> UIImage
+	func correctlyOriented() -> UIImage
 	{
 		guard imageOrientation != .up else { return self }
 		
