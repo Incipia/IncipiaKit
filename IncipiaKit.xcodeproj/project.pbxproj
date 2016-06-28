@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEDC95A61D230EB400B91D2E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */; };
+		CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */; };
+		CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */; };
+		CEDC95B01D2316C400B91D2E /* UIViewControllerContextTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AF1D2316C400B91D2E /* UIViewControllerContextTransitioning.swift */; };
+		CEDC95B21D23174200B91D2E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B11D23174200B91D2E /* UIAlertController+Extensions.swift */; };
+		CEDC95B41D2317E000B91D2E /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B31D2317E000B91D2E /* Bundle+Extensions.swift */; };
+		CEDC95B61D23192300B91D2E /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B51D23192300B91D2E /* UIDevice+Extensions.swift */; };
+		CEDC95B81D23199000B91D2E /* IndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B71D23199000B91D2E /* IndexPath.swift */; };
+		CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */; };
 		CEFBBCE91D21B3A300B984A9 /* IncipiaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFBBCE81D21B3A300B984A9 /* IncipiaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEFBBCF01D21B3A300B984A9 /* IncipiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFBBCE51D21B3A300B984A9 /* IncipiaKit.framework */; };
 		CEFBBCF51D21B3A300B984A9 /* IncipiaKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBBCF41D21B3A300B984A9 /* IncipiaKitTests.swift */; };
@@ -23,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "UIKit-Extensions/UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "UIKit-Extensions/UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC95AF1D2316C400B91D2E /* UIViewControllerContextTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerContextTransitioning.swift; path = "UIKit-Extensions/UIViewControllerContextTransitioning.swift"; sourceTree = "<group>"; };
+		CEDC95B11D23174200B91D2E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Extensions.swift"; path = "UIKit-Extensions/UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC95B31D2317E000B91D2E /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Extensions/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC95B51D23192300B91D2E /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extensions.swift"; path = "UIKit-Extensions/UIDevice+Extensions.swift"; sourceTree = "<group>"; };
+		CEDC95B71D23199000B91D2E /* IndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPath.swift; path = Extensions/IndexPath.swift; sourceTree = "<group>"; };
+		CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Extensions.swift"; path = "UIKit-Extensions/UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		CEFBBCE51D21B3A300B984A9 /* IncipiaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncipiaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFBBCE81D21B3A300B984A9 /* IncipiaKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncipiaKit.h; sourceTree = "<group>"; };
 		CEFBBCEA1D21B3A300B984A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +68,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEDC95A71D230EBB00B91D2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */,
+				CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */,
+				CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */,
+				CEDC95AF1D2316C400B91D2E /* UIViewControllerContextTransitioning.swift */,
+				CEDC95B11D23174200B91D2E /* UIAlertController+Extensions.swift */,
+				CEDC95B31D2317E000B91D2E /* Bundle+Extensions.swift */,
+				CEDC95B51D23192300B91D2E /* UIDevice+Extensions.swift */,
+				CEDC95B71D23199000B91D2E /* IndexPath.swift */,
+				CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */,
+			);
+			name = Extensions;
+			path = IncipiaKit;
+			sourceTree = "<group>";
+		};
 		CEFBBCDB1D21B3A300B984A9 = {
 			isa = PBXGroup;
 			children = (
+				CEDC95A71D230EBB00B91D2E /* Extensions */,
 				CEFBBCE71D21B3A300B984A9 /* IncipiaKit */,
 				CEFBBCF31D21B3A300B984A9 /* IncipiaKitTests */,
 				CEFBBCE61D21B3A300B984A9 /* Products */,
@@ -148,9 +184,13 @@
 				TargetAttributes = {
 					CEFBBCE41D21B3A300B984A9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 49BYD5B64K;
+						DevelopmentTeamName = "INCIPIA LLC";
+						LastSwiftMigration = 0800;
 					};
 					CEFBBCEE1D21B3A300B984A9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -194,6 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDC95B21D23174200B91D2E /* UIAlertController+Extensions.swift in Sources */,
+				CEDC95B01D2316C400B91D2E /* UIViewControllerContextTransitioning.swift in Sources */,
+				CEDC95B81D23199000B91D2E /* IndexPath.swift in Sources */,
+				CEDC95B41D2317E000B91D2E /* Bundle+Extensions.swift in Sources */,
+				CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */,
+				CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */,
+				CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */,
+				CEDC95A61D230EB400B91D2E /* UIColor+Extensions.swift in Sources */,
+				CEDC95B61D23192300B91D2E /* UIDevice+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +359,7 @@
 		CEFBBCFA1D21B3A300B984A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +370,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Incipia.IncipiaKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CEFBBCFB1D21B3A300B984A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -336,6 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Incipia.IncipiaKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -346,6 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Incipia.IncipiaKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -356,6 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Incipia.IncipiaKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -378,6 +434,7 @@
 				CEFBBCFB1D21B3A300B984A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFBBCFC1D21B3A300B984A9 /* Build configuration list for PBXNativeTarget "IncipiaKitTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +443,7 @@
 				CEFBBCFE1D21B3A300B984A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
