@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension UICollectionView
+public extension UICollectionView
 {
-	var lastIndexPath: NSIndexPath? {
+	public var lastIndexPath: NSIndexPath? {
 		var ip: NSIndexPath?
 		let numberOfRows = numberOfItemsInSection(0)
 		if numberOfRows > 0 {
@@ -19,21 +19,21 @@ extension UICollectionView
 		return ip
 	}
 	
-	func deselectAllItems(animated: Bool = false)
+	public func deselectAllItems(animated: Bool = false)
 	{
 		for indexPath in self.indexPathsForSelectedItems() ?? [] {
 			self.deselectItemAtIndexPath(indexPath, animated: animated)
 		}
 	}
 	
-	func scrollToBottom(animated: Bool = true)
+	public func scrollToBottom(animated: Bool = true)
 	{
 		if let ip = lastIndexPath {
 			scrollToItemAtIndexPath(ip, atScrollPosition: UICollectionViewScrollPosition.CenteredVertically, animated: animated)
 		}
 	}
 	
-	func scrollToBottomWithDuration(duration: Double, completion: ((finished: Bool) -> ())?)
+	public func scrollToBottomWithDuration(duration: Double, completion: ((finished: Bool) -> ())?)
 	{
 		UIView.animateWithDuration(duration, animations: { () -> Void in
 			

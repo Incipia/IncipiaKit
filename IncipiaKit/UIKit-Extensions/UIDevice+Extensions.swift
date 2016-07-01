@@ -90,9 +90,9 @@ private func parseDeviceType(identifier: String) -> DeviceType
 	}
 }
 
-extension UIDevice
+public extension UIDevice
 {
-	var deviceType: DeviceType {
+	public var deviceType: DeviceType {
 		var systemInfo = utsname()
 		uname(&systemInfo)
 		

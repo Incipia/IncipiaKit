@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension UIImage
+public extension UIImage
 {
-	class func convertGradientToImage(colors: [UIColor], frame: CGRect) -> UIImage
+	class public func convertGradientToImage(colors: [UIColor], frame: CGRect) -> UIImage
 	{
 		// start with a CAGradientLayer
 		let gradientLayer = CAGradientLayer()
@@ -38,12 +38,12 @@ extension UIImage
 		return gradientImage
 	}
 	
-	class func imageWithColor(color: UIColor) -> UIImage
+	class public func imageWithColor(color: UIColor) -> UIImage
 	{
 		return imageWithColor(color, size: CGSize(width: 1, height: 1))
 	}
 	
-	class func imageWithColor(color: UIColor, size: CGSize) -> UIImage
+	class public func imageWithColor(color: UIColor, size: CGSize) -> UIImage
 	{
 		let rect = CGRectMake(0, 0, size.width, size.height)
 		UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -57,7 +57,7 @@ extension UIImage
 		return image
 	}
 	
-	func correctlyOrientedImage() -> UIImage
+	public func correctlyOrientedImage() -> UIImage
 	{
 		guard imageOrientation != UIImageOrientation.Up else { return self }
 		

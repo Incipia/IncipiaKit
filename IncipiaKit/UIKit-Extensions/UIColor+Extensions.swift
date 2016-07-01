@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIColor
+public extension UIColor
 {
 	convenience init(hexString: String)
 	{
@@ -29,7 +29,7 @@ extension UIColor
 		self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
 	}
 	
-	var hexString: String {
+	public var hexString: String {
 		let components = CGColorGetComponents(self.CGColor)
 		
 		let red = Float(components[0])
@@ -38,7 +38,7 @@ extension UIColor
 		return String(format: "#%02lX%02lX%02lX", lroundf(red * 255), lroundf(green * 255), lroundf(blue * 255))
 	}
 	
-	var isWhite: Bool {
+	public var isWhite: Bool {
 		return hexString.uppercaseString == "#FFFFFF"
 	}
 }

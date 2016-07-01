@@ -8,13 +8,13 @@
 
 import Foundation
 
-extension UINavigationController
+public extension UINavigationController
 {
-	override func makeNavBarTransparent() {
+	override public func makeNavBarTransparent() {
 		navigationBar.makeTransparent()
 	}
 	
-	override func resetNavBarTransparency() {
+	override public func resetNavBarTransparency() {
 		navigationBar.resetTransparency()
 	}
 }

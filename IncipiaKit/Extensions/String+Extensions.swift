@@ -8,31 +8,31 @@
 
 import Foundation
 
-extension String
+public extension String
 {
-	var isValidEmail: Bool {
+	public var isValidEmail: Bool {
 		let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
 		let testCase = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
 		return testCase.evaluateWithObject(self)
 	}
 	
-	var containsNumber: Bool {
+	public var containsNumber: Bool {
 		let numberRegEx = ".*[0-9]+.*"
 		let testCase = NSPredicate(format:"SELF MATCHES %@", numberRegEx)
 		return testCase.evaluateWithObject(self)
 	}
 	
-	var isValidURL: Bool {
+	public var isValidURL: Bool {
 		guard let url = NSURL(string: self) else { return false }
 		return UIApplication.sharedApplication().canOpenURL(url)
 	}
 	
-	var trimmed: String {
+	public var trimmed: String {
 		let whitespaceCharacters = NSCharacterSet.whitespaceAndNewlineCharacterSet()
 		return stringByTrimmingCharactersInSet(whitespaceCharacters)
 	}
 	
-	func width(usingFont font: UIFont) -> CGFloat {
+	public func width(usingFont font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: CGFloat.max, height: CGFloat.max)
 		let boundingBox = self.boundingRectWithSize(constraintRect, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName : font], context: nil)
 		return boundingBox.width

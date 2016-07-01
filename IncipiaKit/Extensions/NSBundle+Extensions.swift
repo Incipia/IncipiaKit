@@ -8,13 +8,13 @@
 
 import Foundation
 
-extension NSBundle
+public extension NSBundle
 {
-	class func mainInfoDictionary(key: CFString) -> String? {
+	class public func mainInfoDictionary(key: CFString) -> String? {
 		return mainBundle().infoDictionary?[key as String] as? String
 	}
 	
-	static var appDisplayName: String? {
+	public static var appDisplayName: String? {
 		return mainInfoDictionary(kCFBundleNameKey)
 	}
 }

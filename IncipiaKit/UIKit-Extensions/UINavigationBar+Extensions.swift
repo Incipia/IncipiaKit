@@ -8,13 +8,13 @@
 
 import Foundation
 
-extension UINavigationBar: TransparencyAdjustable
+public extension UINavigationBar
 {
-	func makeTransparent() {
+	public func makeTransparent() {
 		setBackgroundImage(UIImage(), forBarMetrics: .Default)
 	}
 	
-	func resetTransparency() {
+	public func resetTransparency() {
 		setBackgroundImage(nil, forBarMetrics: .Default)
 	}
 }

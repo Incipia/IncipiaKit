@@ -8,13 +8,13 @@
 
 import Foundation
 
-extension UIViewControllerContextTransitioning
+public extension UIViewControllerContextTransitioning
 {
-	var toViewController: UIViewController? {
+	public var toViewController: UIViewController? {
 		return viewControllerForKey(UITransitionContextToViewControllerKey)
 	}
 	
-	var fromViewController: UIViewController? {
+	public var fromViewController: UIViewController? {
 		return viewControllerForKey(UITransitionContextFromViewControllerKey)
 	}
 }

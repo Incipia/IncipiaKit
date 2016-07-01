@@ -7,9 +7,3 @@
 //
 
 import Foundation
-
-protocol TransparencyAdjustable
-{
-	func makeTransparent()
-	func resetTransparency()
-}

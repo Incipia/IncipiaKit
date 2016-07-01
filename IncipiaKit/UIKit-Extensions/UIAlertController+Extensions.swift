@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension UIAlertController
+public extension UIAlertController
 {
-	static func photoAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
+	public static func photoAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
 	{
 		let appName = NSBundle.appDisplayName ?? "this application"
 		let alertController = UIAlertController(
@@ -30,7 +30,7 @@ extension UIAlertController
 		return alertController
 	}
 	
-	static func microphoneAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
+	public static func microphoneAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
 	{
 		let appName = NSBundle.appDisplayName ?? "this application"
 		let alertController = UIAlertController(

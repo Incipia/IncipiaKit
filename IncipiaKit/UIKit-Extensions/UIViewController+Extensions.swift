@@ -8,35 +8,35 @@
 
 import Foundation
 
-extension UIViewController
+public extension UIViewController
 {
-	func makeNavBarTransparent()
+	public func makeNavBarTransparent()
 	{
 		navigationController?.navigationBar.makeTransparent()
 	}
 	
-	func makeNavBarShadowTransparent()
+	public func makeNavBarShadowTransparent()
 	{
 		navigationController?.navigationBar.shadowImage = UIImage()
 	}
 	
-	func resetNavBarTransparency()
+	public func resetNavBarTransparency()
 	{
 		navigationController?.navigationBar.resetTransparency()
 	}
 	
-	func resetNavBarShadow()
+	public func resetNavBarShadow()
 	{
 		navigationController?.navigationBar.shadowImage = nil
 	}
 	
-	func updateNavBar(withColor color: UIColor)
+	public func updateNavBar(withColor color: UIColor)
 	{
 		let image = UIImage.imageWithColor(color)
 		navigationController?.navigationBar.setBackgroundImage(image, forBarMetrics: .Default)
 	}
 	
-	func updateNavBarTintWithColor(color: UIColor)
+	public func updateNavBarTintWithColor(color: UIColor)
 	{
 		navigationController?.navigationBar.tintColor = color
 		navigationController?.navigationBar.barTintColor = color
