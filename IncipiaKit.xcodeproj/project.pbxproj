@@ -17,7 +17,6 @@
 		CEDC95B81D23199000B91D2E /* IndexPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B71D23199000B91D2E /* IndexPath+Extensions.swift */; };
 		CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */; };
 		CEDC95BE1D231FF500B91D2E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95BD1D231FF500B91D2E /* UIViewController+Extensions.swift */; };
-		CEDC95C11D23206200B91D2E /* UIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95C01D23206200B91D2E /* UIProtocols.swift */; };
 		CEDC95C31D2320FA00B91D2E /* UINavigationBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95C21D2320FA00B91D2E /* UINavigationBar+Extensions.swift */; };
 		CEDC95C51D23213900B91D2E /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95C41D23213900B91D2E /* UINavigationController+Extensions.swift */; };
 		CEFBBCE91D21B3A300B984A9 /* IncipiaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFBBCE81D21B3A300B984A9 /* IncipiaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,7 +45,6 @@
 		CEDC95B71D23199000B91D2E /* IndexPath+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "IndexPath+Extensions.swift"; path = "Extensions/IndexPath+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Extensions.swift"; path = "UIKit-Extensions/UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95BD1D231FF500B91D2E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extensions.swift"; path = "UIKit-Extensions/UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		CEDC95C01D23206200B91D2E /* UIProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIProtocols.swift; path = IncipiaKit/Protocols/UIProtocols.swift; sourceTree = "<group>"; };
 		CEDC95C21D2320FA00B91D2E /* UINavigationBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Extensions.swift"; path = "UIKit-Extensions/UINavigationBar+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95C41D23213900B91D2E /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extensions.swift"; path = "UIKit-Extensions/UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		CEFBBCE51D21B3A300B984A9 /* IncipiaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncipiaKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,18 +110,9 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
-		CEDC95BF1D23203500B91D2E /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC95C01D23206200B91D2E /* UIProtocols.swift */,
-			);
-			name = Protocols;
-			sourceTree = "<group>";
-		};
 		CEFBBCDB1D21B3A300B984A9 = {
 			isa = PBXGroup;
 			children = (
-				CEDC95BF1D23203500B91D2E /* Protocols */,
 				CEDC95A71D230EBB00B91D2E /* Extensions */,
 				CEFBBCE71D21B3A300B984A9 /* IncipiaKit */,
 				CEFBBCF31D21B3A300B984A9 /* IncipiaKitTests */,
@@ -277,7 +266,6 @@
 				CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */,
 				CEDC95BE1D231FF500B91D2E /* UIViewController+Extensions.swift in Sources */,
 				CEDC95B81D23199000B91D2E /* IndexPath+Extensions.swift in Sources */,
-				CEDC95C11D23206200B91D2E /* UIProtocols.swift in Sources */,
 				CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */,
 				CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */,
 				CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */,
