@@ -32,7 +32,7 @@ extension String
 		return self.trimmingCharacters(in: whitespaceCharacters)
 	}
 	
-	func width(forFont font: UIFont) -> CGFloat {
+	func width(usingFont font: UIFont) -> CGFloat {
 		let constraintRect = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
 		let attributes = [NSFontAttributeName : font]
 		let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
