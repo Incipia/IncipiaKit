@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name = "IncipiaKit"
-    spec.version = "0.0.1"
+    spec.version = "0.0.2"
     spec.summary = "A collection of utility methods ready for use on any iOS application."
     spec.homepage = "https://github.com/Incipia/IncipiaKit/"
     spec.license = { type: 'Apache', file: 'LICENSE' }
