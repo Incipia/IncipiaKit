@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B94A61D26C57600B0F53D /* NSBundle+Extensions.swift */; };
+		CED404E81D26EA670083365F /* UIViewController+AlertPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED404E71D26EA670083365F /* UIViewController+AlertPresenting.swift */; };
+		CED404EA1D26EC620083365F /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED404E91D26EC620083365F /* UITextField+Extensions.swift */; };
 		CEDC95A61D230EB400B91D2E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */; };
 		CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */; };
 		CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		CE9B94A61D26C57600B0F53D /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSBundle+Extensions.swift"; path = "Extensions/NSBundle+Extensions.swift"; sourceTree = "<group>"; };
+		CED404E71D26EA670083365F /* UIViewController+AlertPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+AlertPresenting.swift"; path = "UIKit-Extensions/UIViewController+AlertPresenting.swift"; sourceTree = "<group>"; };
+		CED404E91D26EC620083365F /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+Extensions.swift"; path = "UIKit-Extensions/UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "UIKit-Extensions/UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "UIKit-Extensions/UIImage+Extensions.swift"; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				CEDC95BD1D231FF500B91D2E /* UIViewController+Extensions.swift */,
 				CEDC95C21D2320FA00B91D2E /* UINavigationBar+Extensions.swift */,
 				CEDC95C41D23213900B91D2E /* UINavigationController+Extensions.swift */,
+				CED404E71D26EA670083365F /* UIViewController+AlertPresenting.swift */,
+				CED404E91D26EC620083365F /* UITextField+Extensions.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 				CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */,
 				CEDC95BE1D231FF500B91D2E /* UIViewController+Extensions.swift in Sources */,
 				CEDC95B81D23199000B91D2E /* NSIndexPath+Extensions.swift in Sources */,
+				CED404EA1D26EC620083365F /* UITextField+Extensions.swift in Sources */,
 				CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */,
 				CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */,
 				CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */,
+				CED404E81D26EA670083365F /* UIViewController+AlertPresenting.swift in Sources */,
 				CEDC95A61D230EB400B91D2E /* UIColor+Extensions.swift in Sources */,
 				CEDC95B61D23192300B91D2E /* UIDevice+Extensions.swift in Sources */,
 			);
