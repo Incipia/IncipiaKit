@@ -17,11 +17,11 @@ extension UIImage
 		gradientLayer.frame = frame
 		
 		// add colors as CGCologRef to a new array and calculate the distances
-		var colorsRef : [CGColor] = []
+		var colorsRef : [CGColorRef] = []
 		var locations : [NSNumber] = []
 		
 		for i in 0 ... colors.count-1 {
-			colorsRef.append(colors[i].cgColor as CGColor)
+			colorsRef.append(colors[i].CGColor as CGColorRef)
 			locations.append(Float(i)/Float(colors.count))
 		}
 		
@@ -30,40 +30,40 @@ extension UIImage
 		
 		// now build a UIImage from the gradient
 		UIGraphicsBeginImageContext(gradientLayer.bounds.size)
-		gradientLayer.render(in: UIGraphicsGetCurrentContext()!)
+		gradientLayer.renderInContext(UIGraphicsGetCurrentContext()!)
 		let gradientImage = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		
 		// return the gradient image
-		return gradientImage!
+		return gradientImage
 	}
 	
-	class func image(withColor color: UIColor) -> UIImage
+	class func imageWithColor(color: UIColor) -> UIImage
 	{
-		return image(withColor: color, size: CGSize(width: 1, height: 1))
+		return imageWithColor(color, size: CGSize(width: 1, height: 1))
 	}
 	
-	class func image(withColor color: UIColor, size: CGSize) -> UIImage
+	class func imageWithColor(color: UIColor, size: CGSize) -> UIImage
 	{
-		let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+		let rect = CGRectMake(0, 0, size.width, size.height)
 		UIGraphicsBeginImageContextWithOptions(size, false, 0)
 		
 		color.setFill()
 		UIRectFill(rect)
 		
-		let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+		let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		
 		return image
 	}
 	
-	func correctlyOriented() -> UIImage
+	func correctlyOrientedImage() -> UIImage
 	{
-		guard imageOrientation != .up else { return self }
+		guard imageOrientation != UIImageOrientation.Up else { return self }
 		
 		UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
-		self.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
-		let normalizedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+		self.drawInRect(CGRectMake(0, 0, self.size.width, self.size.height))
+		let normalizedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext();
 		UIGraphicsEndImageContext();
 		
 		return normalizedImage;

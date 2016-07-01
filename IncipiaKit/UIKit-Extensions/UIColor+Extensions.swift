@@ -10,12 +10,11 @@ import Foundation
 
 extension UIColor
 {
-	convenience init(hexString: String) {
-		let hex = hexString.trimmingCharacters(in: NSCharacterSet.alphanumerics().inverted)
+	convenience init(hexString: String)
+	{
+		let hex = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.alphanumericCharacterSet().invertedSet)
 		var int = UInt32()
-		
-		Scanner(string: hex).scanHexInt32(&int)
-		
+		NSScanner(string: hex).scanHexInt(&int)
 		let a, r, g, b: UInt32
 		switch hex.characters.count {
 		case 3: // RGB (12-bit)
@@ -27,22 +26,19 @@ extension UIColor
 		default:
 			(a, r, g, b) = (1, 1, 1, 0)
 		}
-		
-		let red = CGFloat(r) / 255
-		let green = CGFloat(g) / 255
-		let blue = CGFloat(b) / 255
-		let alpha = CGFloat(a) / 255
-		
-		self.init(red: red, green: green, blue: blue, alpha: alpha)
+		self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
 	}
 	
-	var hexString: String? {
-		guard let components = cgColor.components else { return nil }
+	var hexString: String {
+		let components = CGColorGetComponents(self.CGColor)
 		
-		let r = Float(components[0])
-		let g = Float(components[1])
-		let b = Float(components[2])
-		
-		return String(format: "#%02lX%02lX%02lX", lroundf(r * 255), lroundf(g * 255), lroundf(b * 255))
+		let red = Float(components[0])
+		let green = Float(components[1])
+		let blue = Float(components[2])
+		return String(format: "#%02lX%02lX%02lX", lroundf(red * 255), lroundf(green * 255), lroundf(blue * 255))
+	}
+	
+	var isWhite: Bool {
+		return hexString.uppercaseString == "#FFFFFF"
 	}
 }

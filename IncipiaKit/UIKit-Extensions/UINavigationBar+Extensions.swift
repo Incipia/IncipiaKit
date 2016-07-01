@@ -11,10 +11,10 @@ import Foundation
 extension UINavigationBar: TransparencyAdjustable
 {
 	func makeTransparent() {
-		setBackgroundImage(UIImage(), for: .default)
+		setBackgroundImage(UIImage(), forBarMetrics: .Default)
 	}
 	
 	func resetTransparency() {
-		setBackgroundImage(nil, for: .default)
+		setBackgroundImage(nil, forBarMetrics: .Default)
 	}
 }

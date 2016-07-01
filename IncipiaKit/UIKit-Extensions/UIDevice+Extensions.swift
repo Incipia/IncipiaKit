@@ -106,6 +106,6 @@ extension UIDevice
 			}
 		}
 		
-		return parseDeviceType(identifier: identifier)
+		return parseDeviceType(identifier)
 	}
 }

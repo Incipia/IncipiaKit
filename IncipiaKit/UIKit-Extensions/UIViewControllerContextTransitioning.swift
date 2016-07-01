@@ -11,10 +11,10 @@ import Foundation
 extension UIViewControllerContextTransitioning
 {
 	var toViewController: UIViewController? {
-		return viewController(forKey: UITransitionContextToViewControllerKey)
+		return viewControllerForKey(UITransitionContextToViewControllerKey)
 	}
 	
 	var fromViewController: UIViewController? {
-		return viewController(forKey: UITransitionContextFromViewControllerKey)
+		return viewControllerForKey(UITransitionContextFromViewControllerKey)
 	}
 }

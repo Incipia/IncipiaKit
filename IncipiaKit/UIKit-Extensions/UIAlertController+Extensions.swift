@@ -12,18 +12,18 @@ extension UIAlertController
 {
 	static func photoAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
 	{
-		let appName = Bundle.appDisplayName ?? "this application"
+		let appName = NSBundle.appDisplayName ?? "this application"
 		let alertController = UIAlertController(
 			title: "Photo Access Denied",
 			message: "In order to add an image attachment, \(appName) needs to access your photo library.",
-			preferredStyle: .alert)
+			preferredStyle: .Alert)
 		
-		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: cancelHandler)
+		let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: cancelHandler)
 		alertController.addAction(cancelAction)
 		
-		let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
-			if let url = URL(string:UIApplicationOpenSettingsURLString) {
-				UIApplication.shared().openURL(url)
+		let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
+			if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+				UIApplication.sharedApplication().openURL(url)
 			}
 		}
 		alertController.addAction(openAction)
@@ -32,18 +32,18 @@ extension UIAlertController
 	
 	static func microphoneAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
 	{
-		let appName = Bundle.appDisplayName ?? "this application"
+		let appName = NSBundle.appDisplayName ?? "this application"
 		let alertController = UIAlertController(
 			title: "Microphone Access Denied",
 			message: "In order to record an audio attachment, \(appName) needs to access your microphone.",
-			preferredStyle: .alert)
+			preferredStyle: .Alert)
 		
-		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: cancelHandler)
+		let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: cancelHandler)
 		alertController.addAction(cancelAction)
 		
-		let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
-			if let url = URL(string:UIApplicationOpenSettingsURLString) {
-				UIApplication.shared().openURL(url)
+		let openAction = UIAlertAction(title: "Open Settings", style: .Default) { (action) in
+			if let url = NSURL(string:UIApplicationOpenSettingsURLString) {
+				UIApplication.sharedApplication().openURL(url)
 			}
 		}
 		alertController.addAction(openAction)

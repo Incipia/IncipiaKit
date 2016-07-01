@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B94A61D26C57600B0F53D /* NSBundle+Extensions.swift */; };
 		CEDC95A61D230EB400B91D2E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */; };
 		CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */; };
 		CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */; };
 		CEDC95B01D2316C400B91D2E /* UIViewControllerContextTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95AF1D2316C400B91D2E /* UIViewControllerContextTransitioning.swift */; };
 		CEDC95B21D23174200B91D2E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B11D23174200B91D2E /* UIAlertController+Extensions.swift */; };
-		CEDC95B41D2317E000B91D2E /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B31D2317E000B91D2E /* Bundle+Extensions.swift */; };
 		CEDC95B61D23192300B91D2E /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B51D23192300B91D2E /* UIDevice+Extensions.swift */; };
 		CEDC95B81D23199000B91D2E /* IndexPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B71D23199000B91D2E /* IndexPath+Extensions.swift */; };
 		CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */; };
@@ -36,12 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE9B94A61D26C57600B0F53D /* NSBundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSBundle+Extensions.swift"; path = "Extensions/NSBundle+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95A51D230EB400B91D2E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "UIKit-Extensions/UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extensions.swift"; path = "Extensions/String+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95AD1D2314BD00B91D2E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "UIKit-Extensions/UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95AF1D2316C400B91D2E /* UIViewControllerContextTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerContextTransitioning.swift; path = "UIKit-Extensions/UIViewControllerContextTransitioning.swift"; sourceTree = "<group>"; };
 		CEDC95B11D23174200B91D2E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Extensions.swift"; path = "UIKit-Extensions/UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
-		CEDC95B31D2317E000B91D2E /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Extensions/Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95B51D23192300B91D2E /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extensions.swift"; path = "UIKit-Extensions/UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95B71D23199000B91D2E /* IndexPath+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "IndexPath+Extensions.swift"; path = "Extensions/IndexPath+Extensions.swift"; sourceTree = "<group>"; };
 		CEDC95B91D231AAB00B91D2E /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Extensions.swift"; path = "UIKit-Extensions/UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				CEDC95AB1D2313AD00B91D2E /* String+Extensions.swift */,
-				CEDC95B31D2317E000B91D2E /* Bundle+Extensions.swift */,
 				CEDC95B71D23199000B91D2E /* IndexPath+Extensions.swift */,
+				CE9B94A61D26C57600B0F53D /* NSBundle+Extensions.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -274,10 +274,10 @@
 				CEDC95B21D23174200B91D2E /* UIAlertController+Extensions.swift in Sources */,
 				CEDC95B01D2316C400B91D2E /* UIViewControllerContextTransitioning.swift in Sources */,
 				CEDC95C31D2320FA00B91D2E /* UINavigationBar+Extensions.swift in Sources */,
+				CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */,
 				CEDC95BE1D231FF500B91D2E /* UIViewController+Extensions.swift in Sources */,
 				CEDC95B81D23199000B91D2E /* IndexPath+Extensions.swift in Sources */,
 				CEDC95C11D23206200B91D2E /* UIProtocols.swift in Sources */,
-				CEDC95B41D2317E000B91D2E /* Bundle+Extensions.swift in Sources */,
 				CEDC95AE1D2314BD00B91D2E /* UIImage+Extensions.swift in Sources */,
 				CEDC95BA1D231AAB00B91D2E /* UICollectionView+Extensions.swift in Sources */,
 				CEDC95AC1D2313AD00B91D2E /* String+Extensions.swift in Sources */,

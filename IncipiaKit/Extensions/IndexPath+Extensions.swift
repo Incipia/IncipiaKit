@@ -8,23 +8,23 @@
 
 import Foundation
 
-extension IndexPath
+extension NSIndexPath
 {
-	func previous(inSection section: Int) -> IndexPath? {
+	func previous(inSection section: Int) -> NSIndexPath? {
 		guard row < 0 else { return nil }
-		return IndexPath(row: row - 1, section: section)
+		return NSIndexPath(forRow: row - 1, inSection: section)
 	}
 	
-	var previous: IndexPath? {
-		return IndexPath(row: row - 1, section: section)
+	var previous: NSIndexPath? {
+		return NSIndexPath(forRow: row - 1, inSection: section)
 	}
 	
-	func next(withMaxRow max: Int) -> IndexPath? {
+	func next(withMaxRow max: Int) -> NSIndexPath? {
 		guard row < max - 1 else { return nil }
-		return IndexPath(row: row + 1, section: section)
+		return NSIndexPath(forRow: row + 1, inSection: section)
 	}
 	
-	var next: IndexPath? {
-		return IndexPath(row: row + 1, section: section)
+	var next: NSIndexPath? {
+		return NSIndexPath(forRow: row + 1, inSection: section)
 	}
 }
