@@ -29,6 +29,8 @@
 		CEFD86AB1D3057EC005313AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD86A91D3057EC005313AD /* Main.storyboard */; };
 		CEFD86AD1D3057EC005313AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD86AC1D3057EC005313AD /* Assets.xcassets */; };
 		CEFD86B01D3057EC005313AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD86AE1D3057EC005313AD /* LaunchScreen.storyboard */; };
+		CEFD86B71D3059F1005313AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD86A51D3057EC005313AD /* AppDelegate.swift */; };
+		CEFD86B81D305A14005313AD /* IncipiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFBBCE51D21B3A300B984A9 /* IncipiaKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFD86B81D305A14005313AD /* IncipiaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +345,7 @@
 				CEDC95C51D23213900B91D2E /* UINavigationController+Extensions.swift in Sources */,
 				CEDC95B21D23174200B91D2E /* UIAlertController+Extensions.swift in Sources */,
 				CEDC95B01D2316C400B91D2E /* UIViewControllerContextTransitioning.swift in Sources */,
+				CEFD86B71D3059F1005313AD /* AppDelegate.swift in Sources */,
 				CEDC95C31D2320FA00B91D2E /* UINavigationBar+Extensions.swift in Sources */,
 				CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */,
 				CEDC95BE1D231FF500B91D2E /* UIViewController+Extensions.swift in Sources */,
