@@ -24,6 +24,11 @@
 		CEFBBCE91D21B3A300B984A9 /* IncipiaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFBBCE81D21B3A300B984A9 /* IncipiaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEFBBCF01D21B3A300B984A9 /* IncipiaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFBBCE51D21B3A300B984A9 /* IncipiaKit.framework */; };
 		CEFBBCF51D21B3A300B984A9 /* IncipiaKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFBBCF41D21B3A300B984A9 /* IncipiaKitTests.swift */; };
+		CEFD86A61D3057EC005313AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD86A51D3057EC005313AD /* AppDelegate.swift */; };
+		CEFD86A81D3057EC005313AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD86A71D3057EC005313AD /* ViewController.swift */; };
+		CEFD86AB1D3057EC005313AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD86A91D3057EC005313AD /* Main.storyboard */; };
+		CEFD86AD1D3057EC005313AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD86AC1D3057EC005313AD /* Assets.xcassets */; };
+		CEFD86B01D3057EC005313AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD86AE1D3057EC005313AD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CEFBBCE41D21B3A300B984A9;
 			remoteInfo = IncipiaKit;
+		};
+		CEFD86B51D3057F5005313AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFBBCDC1D21B3A300B984A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFD86A21D3057EC005313AD;
+			remoteInfo = "IncipiaKit-Demo";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,6 +69,13 @@
 		CEFBBCEF1D21B3A300B984A9 /* IncipiaKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncipiaKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFBBCF41D21B3A300B984A9 /* IncipiaKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncipiaKitTests.swift; sourceTree = "<group>"; };
 		CEFBBCF61D21B3A300B984A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFD86A31D3057EC005313AD /* IncipiaKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IncipiaKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFD86A51D3057EC005313AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEFD86A71D3057EC005313AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEFD86AA1D3057EC005313AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFD86AC1D3057EC005313AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFD86AF1D3057EC005313AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEFD86B11D3057EC005313AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +91,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFBBCF01D21B3A300B984A9 /* IncipiaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD86A01D3057EC005313AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +148,7 @@
 				CEDC95A71D230EBB00B91D2E /* Extensions */,
 				CEFBBCE71D21B3A300B984A9 /* IncipiaKit */,
 				CEFBBCF31D21B3A300B984A9 /* IncipiaKitTests */,
+				CEFD86A41D3057EC005313AD /* IncipiaKit-Demo */,
 				CEFBBCE61D21B3A300B984A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +158,7 @@
 			children = (
 				CEFBBCE51D21B3A300B984A9 /* IncipiaKit.framework */,
 				CEFBBCEF1D21B3A300B984A9 /* IncipiaKitTests.xctest */,
+				CEFD86A31D3057EC005313AD /* IncipiaKit-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +179,19 @@
 				CEFBBCF61D21B3A300B984A9 /* Info.plist */,
 			);
 			path = IncipiaKitTests;
+			sourceTree = "<group>";
+		};
+		CEFD86A41D3057EC005313AD /* IncipiaKit-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD86A51D3057EC005313AD /* AppDelegate.swift */,
+				CEFD86A71D3057EC005313AD /* ViewController.swift */,
+				CEFD86A91D3057EC005313AD /* Main.storyboard */,
+				CEFD86AC1D3057EC005313AD /* Assets.xcassets */,
+				CEFD86AE1D3057EC005313AD /* LaunchScreen.storyboard */,
+				CEFD86B11D3057EC005313AD /* Info.plist */,
+			);
+			path = "IncipiaKit-Demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,11 +238,29 @@
 			);
 			dependencies = (
 				CEFBBCF21D21B3A300B984A9 /* PBXTargetDependency */,
+				CEFD86B61D3057F5005313AD /* PBXTargetDependency */,
 			);
 			name = IncipiaKitTests;
 			productName = IncipiaKitTests;
 			productReference = CEFBBCEF1D21B3A300B984A9 /* IncipiaKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEFD86A21D3057EC005313AD /* IncipiaKit-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFD86B41D3057EC005313AD /* Build configuration list for PBXNativeTarget "IncipiaKit-Demo" */;
+			buildPhases = (
+				CEFD869F1D3057EC005313AD /* Sources */,
+				CEFD86A01D3057EC005313AD /* Frameworks */,
+				CEFD86A11D3057EC005313AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IncipiaKit-Demo";
+			productName = "IncipiaKit-Demo";
+			productReference = CEFD86A31D3057EC005313AD /* IncipiaKit-Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -223,6 +282,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
 					};
+					CEFD86A21D3057EC005313AD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = CEFBBCDF1D21B3A300B984A9 /* Build configuration list for PBXProject "IncipiaKit" */;
@@ -231,12 +293,14 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CEFBBCDB1D21B3A300B984A9;
 			productRefGroup = CEFBBCE61D21B3A300B984A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CEFD86A21D3057EC005313AD /* IncipiaKit-Demo */,
 				CEFBBCE41D21B3A300B984A9 /* IncipiaKit */,
 				CEFBBCEE1D21B3A300B984A9 /* IncipiaKitTests */,
 			);
@@ -255,6 +319,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD86A11D3057EC005313AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFD86B01D3057EC005313AD /* LaunchScreen.storyboard in Resources */,
+				CEFD86AD1D3057EC005313AD /* Assets.xcassets in Resources */,
+				CEFD86AB1D3057EC005313AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +364,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEFD869F1D3057EC005313AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFD86A81D3057EC005313AD /* ViewController.swift in Sources */,
+				CEFD86A61D3057EC005313AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,7 +381,31 @@
 			target = CEFBBCE41D21B3A300B984A9 /* IncipiaKit */;
 			targetProxy = CEFBBCF11D21B3A300B984A9 /* PBXContainerItemProxy */;
 		};
+		CEFD86B61D3057F5005313AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFD86A21D3057EC005313AD /* IncipiaKit-Demo */;
+			targetProxy = CEFD86B51D3057F5005313AD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFD86A91D3057EC005313AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFD86AA1D3057EC005313AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEFD86AE1D3057EC005313AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFD86AF1D3057EC005313AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CEFBBCF71D21B3A300B984A9 /* Debug */ = {
@@ -453,6 +560,28 @@
 			};
 			name = Release;
 		};
+		CEFD86B21D3057EC005313AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "IncipiaKit-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Incipia.IncipiaKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEFD86B31D3057EC005313AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "IncipiaKit-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Incipia.IncipiaKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +611,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CEFD86B41D3057EC005313AD /* Build configuration list for PBXNativeTarget "IncipiaKit-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFD86B21D3057EC005313AD /* Debug */,
+				CEFD86B31D3057EC005313AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

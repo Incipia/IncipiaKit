@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IncipiaKit-Demo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>IncipiaKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>CEFBBCEE1D21B3A300B984A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEFD86A21D3057EC005313AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
