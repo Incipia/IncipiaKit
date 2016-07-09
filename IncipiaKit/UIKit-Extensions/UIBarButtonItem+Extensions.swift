@@ -13,13 +13,11 @@ public extension UIBarButtonItem {
 		let backImage = IconProvider.icon(.LeftArrow)
 		
 		let overriddenTarget = action != nil ? target : nil
-		let overriddenAction = action ?? ""
-		
-		return UIBarButtonItem(image: backImage, style: .Plain, target: overriddenTarget, action: overriddenAction)
+		return UIBarButtonItem(image: backImage, style: .Plain, target: overriddenTarget, action: action ?? nil)
 	}
 	
 	public static var empty: UIBarButtonItem {
-		return UIBarButtonItem(title: "", style: .Plain, target: nil, action: "")
+		return UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
 	}
 	
 	public func update(color color: UIColor) {
