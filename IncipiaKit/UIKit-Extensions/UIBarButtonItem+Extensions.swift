@@ -13,7 +13,9 @@ public extension UIBarButtonItem {
 		let backImage = IconProvider.icon(.LeftArrow)
 		
 		let overriddenTarget = action != nil ? target : nil
-		return UIBarButtonItem(image: backImage, style: .Plain, target: overriddenTarget, action: action ?? nil)
+		let overriddenAction = action ?? #selector(UIBarButtonItem.ik_doNothing)
+		
+		return UIBarButtonItem(image: backImage, style: .Plain, target: overriddenTarget, action: overriddenAction)
 	}
 	
 	public static var empty: UIBarButtonItem {
@@ -35,4 +37,6 @@ public extension UIBarButtonItem {
 			setTitleTextAttributes([NSForegroundColorAttributeName : highlightedColor], forState: .Highlighted)
 		}
 	}
+	
+	@objc private func ik_doNothing() {}
 }
