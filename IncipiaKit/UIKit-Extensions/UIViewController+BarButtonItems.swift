@@ -18,7 +18,7 @@ public extension UIViewController {
 	}
 	
 	public func usePlainArrowForBackButtonItem(withAction action: Selector? = nil) {
-		let itemAction = action ?? #selector(ik_backButtonPressed)
+		let itemAction = action ?? #selector(UIViewController.ik_backButtonPressed)
 		let item = UIBarButtonItem.back(target: self, action: itemAction)
 		navigationItem.setLeftBarButtonItems([item], animated: false)
 	}
