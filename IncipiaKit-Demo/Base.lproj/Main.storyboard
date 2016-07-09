@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View ControllerA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IncipiaKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerA" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewControllerA" customModule="IncipiaKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +16,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URj-Vc-GE7">
+                                <rect key="frame" x="0.0" y="488" width="600" height="112"/>
+                                <color key="backgroundColor" red="0.16447375710000001" green="0.53145653010000005" blue="0.42417222259999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="tHO-oA-iUO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.5277109485" green="0.80341950259999995" blue="0.35121518699999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="_nextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="taG-tP-U78"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15585234440000001" green="0.81713434689999997" blue="0.66084594050000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="URj-Vc-GE7" secondAttribute="trailing" id="iFd-Ez-bkM"/>
+                            <constraint firstItem="URj-Vc-GE7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pIc-gp-87p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="URj-Vc-GE7" secondAttribute="bottom" id="uFC-VY-SwU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="63" y="389"/>
+        </scene>
+        <!--View ControllerB-->
+        <scene sceneID="gni-JY-hq5">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerB" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZBT-OR-PS8" customClass="ViewControllerB" customModule="IncipiaKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cUO-r9-dlo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Afn-WC-802"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cpk-kd-1Tb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50145617949999999" green="1" blue="0.72768762659999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOr-zt-8fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="389"/>
         </scene>
     </scenes>
 </document>

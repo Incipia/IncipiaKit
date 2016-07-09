@@ -12,4 +12,9 @@ Pod::Spec.new do |spec|
     spec.frameworks = 'Foundation', 'UIKit'
     spec.source = { git: "https://github.com/Incipia/IncipiaKit.git", tag: "v#{spec.version}" }
     spec.source_files = "IncipiaKit/**/*.{h,swift}"
+    spec.resource_bundles = {
+      'IncipiaKit' => [
+        'IncipiaKit/Resources/**/*.{xcassets,storyboard,xib}'
+      ]
+    }
 end

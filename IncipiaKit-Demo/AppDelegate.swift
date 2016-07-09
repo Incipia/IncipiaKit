@@ -7,26 +7,17 @@
 //
 
 import UIKit
-import IncipiaKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+	var router: AppRouter?
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		// Override point for customization after application launch.
-		
-		let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-		let nc = UINavigationController(rootViewController: vc)
-		
-		nc.makeNavBarTransparent()
-		nc.makeNavBarShadowTransparent()
 		
 		window = UIWindow()
-		window?.rootViewController = nc
-		window?.makeKeyAndVisible()
+		router = AppRouter(window: window!)
 		
 		return true
 	}
