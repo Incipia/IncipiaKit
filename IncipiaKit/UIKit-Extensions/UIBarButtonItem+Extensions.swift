@@ -12,8 +12,6 @@ public extension UIBarButtonItem {
 	public static func back(target target: AnyObject? = nil, action: Selector? = nil) -> UIBarButtonItem {
 		let backImage = IconProvider.icon(.LeftArrow)
 		
-		
-		
 		let overriddenTarget = action != nil ? target : nil
 		let overriddenAction = action ?? #selector(UIBarButtonItem.ik_doNothing)
 		
