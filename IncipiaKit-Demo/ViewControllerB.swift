@@ -16,7 +16,7 @@ class ViewControllerB: UIViewController {
 	
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-		removeLeftBarItem()
+		usePlainArrowForBackButtonItem()
 	}
 	
 	func backButtonPressed() {

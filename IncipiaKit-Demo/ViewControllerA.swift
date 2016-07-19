@@ -16,10 +16,18 @@ class ViewControllerA: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 	}
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		updateLeftBarButtonItem(withImageName: "filters", action: #selector(ViewControllerA._next))
+	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
+	}
+	
+	func _next() {
 	}
 	
 	@IBAction private func _nextButtonPressed() {
