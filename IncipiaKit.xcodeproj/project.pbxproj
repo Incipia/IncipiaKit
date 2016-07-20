@@ -38,6 +38,7 @@
 		CEFD86C41D31ADE5005313AD /* IconProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD86C31D31ADE5005313AD /* IconProvider.swift */; };
 		CEFD86C61D31B4FD005313AD /* UIViewController+BarButtonItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD86C51D31B4FD005313AD /* UIViewController+BarButtonItems.swift */; };
 		CEFEAD921D3EC04F004D3CFC /* UIToolbar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEAD911D3EC04F004D3CFC /* UIToolbar+Extensions.swift */; };
+		CEFEADBB1D3FE428004D3CFC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEADBA1D3FE428004D3CFC /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		CEFD86C31D31ADE5005313AD /* IconProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconProvider.swift; path = Private/IconProvider.swift; sourceTree = "<group>"; };
 		CEFD86C51D31B4FD005313AD /* UIViewController+BarButtonItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+BarButtonItems.swift"; path = "UIKit-Extensions/UIViewController+BarButtonItems.swift"; sourceTree = "<group>"; };
 		CEFEAD911D3EC04F004D3CFC /* UIToolbar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIToolbar+Extensions.swift"; path = "UIKit-Extensions/UIToolbar+Extensions.swift"; sourceTree = "<group>"; };
+		CEFEADBA1D3FE428004D3CFC /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "UIKit-Extensions/UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				CEFD86BD1D318BB8005313AD /* UIViewController+Instantiate.swift */,
 				CEDC95AF1D2316C400B91D2E /* UIViewControllerContextTransitioning.swift */,
 				CEFEAD911D3EC04F004D3CFC /* UIToolbar+Extensions.swift */,
+				CEFEADBA1D3FE428004D3CFC /* UIView+Extensions.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			files = (
 				CEDC95C51D23213900B91D2E /* UINavigationController+Extensions.swift in Sources */,
 				CEDC95B21D23174200B91D2E /* UIAlertController+Extensions.swift in Sources */,
+				CEFEADBB1D3FE428004D3CFC /* UIView+Extensions.swift in Sources */,
 				CEDC95B01D2316C400B91D2E /* UIViewControllerContextTransitioning.swift in Sources */,
 				CEDC95C31D2320FA00B91D2E /* UINavigationBar+Extensions.swift in Sources */,
 				CE9B94A71D26C57600B0F53D /* NSBundle+Extensions.swift in Sources */,

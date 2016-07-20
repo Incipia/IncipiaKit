@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import IncipiaKit
 
 class ViewControllerA: UIViewController {
 
+	@IBOutlet private var _container: UIView!
+	
 	var nextButtonPressed: () -> Void = {}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		let testView = UIView()
+		testView.backgroundColor = .redColor()
+		
+		_container.addAndFill(subview: testView)
 	}
 	
 	override func viewWillAppear(animated: Bool) {
