@@ -20,7 +20,17 @@ class ViewControllerA: UIViewController {
 		// Do any additional setup after loading the view, typically from a nib.
 		
 		let testView = UIView()
-		testView.backgroundColor = .redColor()
+		testView.backgroundColor = .clearColor()
+		
+		let label = UILabel()
+		label.text = "HELLO!"
+		label.font = UIFont.boldSystemFontOfSize(24)
+		label.kerning = 5.0
+		
+		testView.addSubview(label)
+		label.translatesAutoresizingMaskIntoConstraints = false
+		label.centerXAnchor.constraintEqualToAnchor(testView.centerXAnchor).active = true
+		label.centerYAnchor.constraintEqualToAnchor(testView.centerYAnchor).active = true
 		
 		_container.addAndFill(subview: testView)
 	}
