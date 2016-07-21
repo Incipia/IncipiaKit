@@ -19,20 +19,26 @@ class ViewControllerA: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
-		let testView = UIView()
-		testView.backgroundColor = .clearColor()
+//		let testView = UIView()
+//		testView.backgroundColor = .clearColor()
+//		
+//		let label = UILabel()
+//		label.text = "HELLO!"
+//		label.font = UIFont.boldSystemFontOfSize(24)
+//		label.kerning = 5.0
+//		
+//		testView.addSubview(label)
+//		label.translatesAutoresizingMaskIntoConstraints = false
+//		label.centerXAnchor.constraintEqualToAnchor(testView.centerXAnchor).active = true
+//		label.centerYAnchor.constraintEqualToAnchor(testView.centerYAnchor).active = true
 		
-		let label = UILabel()
-		label.text = "HELLO!"
-		label.font = UIFont.boldSystemFontOfSize(24)
-		label.kerning = 5.0
+//		_container.addAndFill(subview: testView)
 		
-		testView.addSubview(label)
-		label.translatesAutoresizingMaskIntoConstraints = false
-		label.centerXAnchor.constraintEqualToAnchor(testView.centerXAnchor).active = true
-		label.centerYAnchor.constraintEqualToAnchor(testView.centerYAnchor).active = true
+//		let border = _container.addBorder(withSize: 5, toEdge: .Top, padding: 10)
+//		border?.backgroundColor = .orangeColor()
 		
-		_container.addAndFill(subview: testView)
+//	   _container.addBordersToAllEdges(borderSize: 5).forEach { $0.backgroundColor = .redColor() }
+//		_container.addBorder(withSize: 10, toEdge: UIRectEdge.Left)?.backgroundColor = .blueColor()
 	}
 	
 	override func viewWillAppear(animated: Bool) {

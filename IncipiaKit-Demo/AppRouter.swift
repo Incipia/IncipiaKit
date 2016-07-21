@@ -12,8 +12,8 @@ import IncipiaKit
 class AppRouter {
 	let window: UIWindow
 	
-	let viewControllerA = ViewControllerA.instantiate(.Main)
-	let viewControllerB = ViewControllerB.instantiate(.Main)
+	let viewControllerA = ViewControllerA.instantiate(fromStoryboard: "Main")
+	let viewControllerB = ViewControllerB.instantiate(fromStoryboard: "Main")
 	let rootNavController = UINavigationController()
 	
 	init(window: UIWindow) {
