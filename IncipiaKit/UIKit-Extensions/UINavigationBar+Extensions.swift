@@ -68,7 +68,6 @@ public extension UINavigationController {
 	}
 	
 	public override func updateNavBar(withColor color: UIColor) {
-		let image = UIImage.imageWithColor(color)
 		navigationBar.update(backgroundColor: color)
 	}
 }
