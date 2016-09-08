@@ -31,17 +31,17 @@ class ViewControllerA: UIViewController {
 //		label.translatesAutoresizingMaskIntoConstraints = false
 //		label.centerXAnchor.constraintEqualToAnchor(testView.centerXAnchor).active = true
 //		label.centerYAnchor.constraintEqualToAnchor(testView.centerYAnchor).active = true
-		
+//		
 //		_container.addAndFill(subview: testView)
-		
+//		
 //		let border = _container.addBorder(withSize: 5, toEdge: .Top, padding: 10)
 //		border?.backgroundColor = .orangeColor()
-		
+//		
 //	   _container.addBordersToAllEdges(borderSize: 5).forEach { $0.backgroundColor = .redColor() }
 //		_container.addBorder(withSize: 10, toEdge: UIRectEdge.Left)?.backgroundColor = .blueColor()
 	}
 	
-	override func viewWillAppear(animated: Bool) {
+	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		updateLeftBarButtonItem(withImageName: "filters", action: #selector(ViewControllerA._next))
 	}

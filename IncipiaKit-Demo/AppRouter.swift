@@ -18,7 +18,7 @@ class AppRouter {
 	
 	init(window: UIWindow) {
 		self.window = window
-		_configure(window)
+		_configure(window: window)
 		
 		viewControllerA.title = "Hello"
 		
@@ -26,7 +26,7 @@ class AppRouter {
 		viewControllerA.nextButtonPressed = _showViewControllerB
 		
 		let appearance = UIBarButtonItem.appearance()
-		appearance.tintColor = UIColor.whiteColor()
+		appearance.tintColor = UIColor.white
 	}
 	
 	private func _configure(window: UIWindow) {

@@ -14,12 +14,12 @@ class ViewControllerB: UIViewController {
 		super.viewDidLoad()
 	}
 	
-	override func viewWillAppear(animated: Bool) {
+	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		usePlainArrowForBackButtonItem()
 	}
 	
 	func backButtonPressed() {
-		navigationController?.popViewControllerAnimated(true)
+		navigationController?.popViewController(animated: true)
 	}
 }
