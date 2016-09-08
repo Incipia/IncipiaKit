@@ -12,7 +12,7 @@ import Accelerate
 public extension UIImage
 {
 	// MARK: - Utilities
-	class public func convertGradientToImage(colors: [UIColor], frame: CGRect) -> UIImage {
+	class public func convertGradientToImage(colors: [UIColor], frame: CGRect) -> UIImage? {
 		// start with a CAGradientLayer
 		let gradientLayer = CAGradientLayer()
 		gradientLayer.frame = frame
@@ -39,32 +39,32 @@ public extension UIImage
 		return gradientImage
 	}
 	
-	class public func imageWithColor(color: UIColor) -> UIImage {
+	class public func imageWithColor(color: UIColor) -> UIImage? {
 		return imageWithColor(color, size: CGSize(width: 1, height: 1))
 	}
 	
-	class public func imageWithColor(color: UIColor, size: CGSize) -> UIImage {
+	class public func imageWithColor(color: UIColor, size: CGSize) -> UIImage? {
 		let rect = CGRectMake(0, 0, size.width, size.height)
 		UIGraphicsBeginImageContextWithOptions(size, false, 0)
 		
 		color.setFill()
 		UIRectFill(rect)
 		
-		let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+		let image = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		
 		return image
 	}
 	
-	public func correctlyOrientedImage() -> UIImage {
+	public func correctlyOrientedImage() -> UIImage? {
 		guard imageOrientation != UIImageOrientation.Up else { return self }
 		
 		UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
 		self.drawInRect(CGRectMake(0, 0, self.size.width, self.size.height))
-		let normalizedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext();
-		UIGraphicsEndImageContext();
+		let normalizedImage = UIGraphicsGetImageFromCurrentImageContext()
+		UIGraphicsEndImageContext()
 		
-		return normalizedImage;
+		return normalizedImage
 	}
 	
 	// MARK: - Effects
@@ -128,7 +128,7 @@ public extension UIImage
 		let hasSaturationChange = fabs(saturationDeltaFactor - 1.0) > __FLT_EPSILON__
 		
 		if hasBlur || hasSaturationChange {
-			func createEffectBuffer(context: CGContext?) -> vImage_Buffer {
+			func createEffectBuffer(context: CGContext) -> vImage_Buffer {
 				let data = CGBitmapContextGetData(context)
 				let width = vImagePixelCount(CGBitmapContextGetWidth(context))
 				let height = vImagePixelCount(CGBitmapContextGetHeight(context))
@@ -138,17 +138,19 @@ public extension UIImage
 			}
 			
 			UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
-			let effectInContext = UIGraphicsGetCurrentContext()
+			guard let effectInContext = UIGraphicsGetCurrentContext() else { return nil }
 			
 			CGContextScaleCTM(effectInContext, 1.0, -1.0)
 			CGContextTranslateCTM(effectInContext, 0, -size.height)
-			CGContextDrawImage(effectInContext, imageRect, self.CGImage)
+			
+			guard let cgImage = self.CGImage else { return nil }
+			CGContextDrawImage(effectInContext, imageRect, cgImage)
 			
 			var effectInBuffer = createEffectBuffer(effectInContext)
 			
 			
 			UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
-			let effectOutContext = UIGraphicsGetCurrentContext()
+			guard let effectOutContext = UIGraphicsGetCurrentContext() else { return nil }
 			
 			var effectOutBuffer = createEffectBuffer(effectOutContext)
 			
@@ -208,13 +210,15 @@ public extension UIImage
 			}
 			
 			if !effectImageBuffersAreSwapped {
-				effectImage = UIGraphicsGetImageFromCurrentImageContext()
+				guard let ei = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+				effectImage = ei
 			}
 			
 			UIGraphicsEndImageContext()
 			
 			if effectImageBuffersAreSwapped {
-				effectImage = UIGraphicsGetImageFromCurrentImageContext()
+				guard let ei = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+				effectImage = ei
 			}
 			
 			UIGraphicsEndImageContext()
@@ -222,20 +226,24 @@ public extension UIImage
 		
 		// Set up output context.
 		UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
-		let outputContext = UIGraphicsGetCurrentContext()
+		guard let outputContext = UIGraphicsGetCurrentContext() else { return nil }
 		CGContextScaleCTM(outputContext, 1.0, -1.0)
 		CGContextTranslateCTM(outputContext, 0, -size.height)
 		
 		// Draw base image.
-		CGContextDrawImage(outputContext, imageRect, self.CGImage)
+		guard let cgImage = CGImage else { return nil }
+		CGContextDrawImage(outputContext, imageRect, cgImage)
 		
 		// Draw effect image.
 		if hasBlur {
 			CGContextSaveGState(outputContext)
 			if let image = maskImage {
-				CGContextClipToMask(outputContext, imageRect, image.CGImage);
+				guard let maskCGImage = image.CGImage else { return nil }
+				CGContextClipToMask(outputContext, imageRect, maskCGImage)
 			}
-			CGContextDrawImage(outputContext, imageRect, effectImage.CGImage)
+			
+			guard let effectCGImage = effectImage.CGImage else { return nil }
+			CGContextDrawImage(outputContext, imageRect, effectCGImage)
 			CGContextRestoreGState(outputContext)
 		}
 		

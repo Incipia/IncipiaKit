@@ -13,7 +13,7 @@ public extension UILabel {
 		get {
 			var range = NSMakeRange(0, (text ?? "").characters.count)
 			guard let kern = attributedText?.attribute(NSKernAttributeName, atIndex: 0, effectiveRange: &range),
-				value = kern as? NSNumber else {
+				let value = kern as? NSNumber else {
 					return 0
 			}
 			return value.floatValue

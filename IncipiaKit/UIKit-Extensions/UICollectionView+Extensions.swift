@@ -33,7 +33,7 @@ public extension UICollectionView
 		}
 	}
 	
-	public func scrollToBottomWithDuration(duration: Double, completion: ((finished: Bool) -> ())?)
+	public func scrollToBottomWithDuration(duration: Double, completion: ((finished: Bool) -> Void)?)
 	{
 		UIView.animateWithDuration(duration, animations: { () -> Void in
 			
