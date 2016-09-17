@@ -12,7 +12,7 @@ import Accelerate
 public extension UIImage
 {
 	// MARK: - Utilities
-	class public func convertGradientToImage(colors: [UIColor], frame: CGRect) -> UIImage? {
+	class public func gradientImage(colors: [UIColor], frame: CGRect) -> UIImage? {
 		// start with a CAGradientLayer
 		let gradientLayer = CAGradientLayer()
 		gradientLayer.frame = frame

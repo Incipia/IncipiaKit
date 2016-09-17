@@ -10,7 +10,7 @@ import Foundation
 
 public extension UIAlertController
 {
-	public static func photoAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
+	public static func photoAccessDeniedAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
 	{
 		let appName = Bundle.appDisplayName ?? "this application"
 		let alertController = UIAlertController(
@@ -30,7 +30,7 @@ public extension UIAlertController
 		return alertController
 	}
 	
-	public static func microphoneAccessAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
+	public static func microphoneAccessDeniedAlert(cancelHandler: ((UIAlertAction) -> ())? = nil) -> UIAlertController
 	{
 		let appName = Bundle.appDisplayName ?? "this application"
 		let alertController = UIAlertController(
